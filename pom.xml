@@ -20,6 +20,8 @@
         <module>cloud1-eureka</module>
         <module>cloud1-producter</module>
         <module>cloud1-ribbon-service</module>
+        <module>cloud1-hystrix-service</module>
+        <module>cloud1-openfeign-service</module>
     </modules>
 
     <properties>
