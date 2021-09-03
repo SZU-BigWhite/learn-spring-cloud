@@ -1,0 +1,11 @@
+server:
+  port: 2002
+spring:
+  application:
+    name: eureka-client-producter
+eureka:
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    service-url:
+      defaultZone: http://root:123456@localhost:2001/eureka/

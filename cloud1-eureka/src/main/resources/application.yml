@@ -1,0 +1,21 @@
+server:
+  port: 2001
+spring:
+  application:
+    name: eureka-server
+  security:
+    user:
+      name: root
+      password: 123456
+eureka:
+  instance:
+    hostname: server1
+  client:
+    # 是否获取注册服务
+    fetch-registry: false
+    # 是否注册到注册中心中
+    register-with-eureka: false
+    service-url:
+      # 注册地址
+      defaultZone: http://localhost:2001/eureka
+
