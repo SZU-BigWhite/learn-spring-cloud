@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>cloud1-producter</artifactId>
+    <artifactId>cloud1-ribbon-service</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -33,6 +33,11 @@
             <artifactId>lombok</artifactId>
             <version>1.16.10</version>
             <scope>provided</scope>
+        </dependency>
+        <!--ribbon 主要给服务间调用及API网关转发提供负载均衡的功能 -->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
         </dependency>
     </dependencies>
 

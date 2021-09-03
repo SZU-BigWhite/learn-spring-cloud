@@ -3,5 +3,6 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/cloud1-eureka/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud1-producter/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud1-ribbon-service/src/main/java" charset="UTF-8" />
   </component>
 </project>
