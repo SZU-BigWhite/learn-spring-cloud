@@ -1,0 +1,24 @@
+server:
+  port: 2009
+spring:
+  application:
+    name: eureka-client-config-client
+  cloud:
+    # config客户端配置
+    config:
+      # 分支名称
+      label: master
+      # 启用配置后缀名称
+      profile: dev
+      # 配置文件名称
+      name: config
+      server:
+        bootstrap: true
+        git:
+          uri: https://gitee.com/BigWhiteOne/springcloud-config
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://root:123456@localhost:2001/eureka/

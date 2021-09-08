@@ -1,0 +1,7 @@
+server:
+  port: 2012
+spring:
+  application:
+    name: oauth2-jwt-server
+  redis:
+    host: 192.168.1.233

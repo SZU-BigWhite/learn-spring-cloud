@@ -10,6 +10,6 @@ eureka:
     service-url:
       defaultZone: http://root:123456@localhost:2001/eureka
 
-# 自定义属性，用于连接的url
+# 自定义属性，用于restTemplate连接的url
 service-url:
   user-producter: http://eureka-client-producter

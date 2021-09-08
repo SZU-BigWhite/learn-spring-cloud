@@ -1,0 +1,28 @@
+server:
+  port: 2018
+spring:
+  application:
+    name: nacos-sentinel-service
+  cloud:
+    nacos:
+      server-addr: http://localhost:8848
+    sentinel:
+      transport:
+        # 配置Sentinel dashborad地址，启动命令设置(默认8080)9100端口:java -jar -Dserver.port=9100 sentinel-dashboard-1.8.2.jar
+        dashboard: http://localhost:9100
+        port: 8719
+      datasource:
+        ds1:
+          nacos:
+            server-addr: localhost:8848
+            dataId: ${spring.application.name}-sentinel
+            groupId: DEFAULT_GROUP
+            data-type: json
+            rule-type: flow
+
+feign:
+  sentinel:
+    enabled: true
+
+service-url:
+  user-service: http://nacos-user-service

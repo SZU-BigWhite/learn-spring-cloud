@@ -1,0 +1,26 @@
+server:
+  port: 2013
+  servlet:
+    session:
+      cookie:
+        #防止cookie冲突，冲突会导致登录验证不通过
+        name: OAUTH2-CLIENT-SESSIONID
+
+spring:
+  application:
+    name: oauth2-client
+
+oauth2-service-url: http://localhost:2012
+
+security:
+  # 与oauth2-server 对应的client_id + secret的配置
+  oauth2:
+    client:
+      client-id: admin
+      client-secret: 123456
+      user-authorization-uri: ${oauth2-service-url}/oauth/authorize
+      access-token-uri: ${oauth2-service-url}/oauth/token
+    resource:
+      jwt:
+        key-uri: ${oauth2-service-url}/oauth/token_key
+

@@ -1,10 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
+    <file url="file://$PROJECT_DIR$/cloud1-config-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud1-config-server/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud1-eureka/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud1-gateway/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud1-hystrix-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud1-openfeign-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud1-producter/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud1-ribbon-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud1-zuul/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nacos-config-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nacos-ribbon-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nacos-sentinel-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/nacos-user-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth2-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth2-jwt-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/oauth2-server/src/main/java" charset="UTF-8" />
   </component>
 </project>

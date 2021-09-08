@@ -22,6 +22,17 @@
         <module>cloud1-ribbon-service</module>
         <module>cloud1-hystrix-service</module>
         <module>cloud1-openfeign-service</module>
+        <module>cloud1-zuul</module>
+        <module>cloud1-config-server</module>
+        <module>cloud1-config-client</module>
+        <module>cloud1-gateway</module>
+        <module>oauth2-server</module>
+        <module>oauth2-jwt-server</module>
+        <module>oauth2-client</module>
+        <module>nacos-user-service</module>
+        <module>nacos-ribbon-service</module>
+        <module>nacos-config-client</module>
+        <module>nacos-sentinel-service</module>
     </modules>
 
     <properties>

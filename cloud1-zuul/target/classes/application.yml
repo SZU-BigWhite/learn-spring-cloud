@@ -1,0 +1,37 @@
+server:
+  port: 2007
+spring:
+  application:
+    name: eureka-client-zuul
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://root:123456@localhost:2001/eureka/
+
+# zuul配置路由转发
+zuul:
+  routes:
+    eureka-client-openfeign:
+      path: /openfeign/**
+    eureka-client-producter:
+      path: /producter/**
+  # 忽视默认路由规则的路由
+  ignored-services: eureka-client-openfeign,eureka-client-producter
+  # 添加请求前缀
+  prefix: /proxy
+# 默认路由规则
+#zuul:
+#  routes:
+#    # 给服务配置路由
+#    eureka-client-openfeign:
+#      path: /eureka-client-openfeign/**
+#    eureka-client-producter:
+#      path: /eureka-client-producter/**
+
+# actuator 查看路由信息的配置
+management:
+  endpoints:
+    web:
+      exposure:
+        include: 'routes'
