@@ -12,10 +12,10 @@ eureka:
     hostname: server1
   client:
     # 是否获取注册服务
-    fetch-registry: false
+    fetch-registry: true
     # 是否注册到注册中心中
-    register-with-eureka: false
+    register-with-eureka: true
     service-url:
       # 注册地址
-      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@server1:2002/eureka/
+      defaultZone: http://${spring.security.user.name}:${spring.security.user.password}@localhost:2002/eureka/
 
