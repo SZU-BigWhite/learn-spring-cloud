@@ -7,6 +7,7 @@
     <file url="file://$PROJECT_DIR$/cloud1-eureka/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud1-gateway/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud1-hystrix-service/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud1-kafka-consumer/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud1-openfeign-service/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud1-producter/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud1-ribbon-service/src/main/java" charset="UTF-8" />

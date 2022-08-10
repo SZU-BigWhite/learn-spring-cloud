@@ -34,6 +34,7 @@
         <module>nacos-config-client</module>
         <module>nacos-sentinel-service</module>
         <module>cloud1-apollo-client</module>
+        <module>cloud1-kafka-consumer</module>
     </modules>
 
     <properties>

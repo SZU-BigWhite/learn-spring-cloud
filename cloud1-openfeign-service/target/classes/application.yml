@@ -1,9 +1,0 @@
-server:
-  port: 2006
-spring:
-  application:
-    name: eureka-client-openfeign
-eureka:
-  client:
-    service-url:
-      defaultZone: http://root:123456@localhost:2001/eureka/
