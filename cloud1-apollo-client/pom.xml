@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>cloud1-gateway</artifactId>
+    <artifactId>cloud1-apollo-client</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -17,10 +17,16 @@
     </properties>
 
     <dependencies>
+        <!--spring boot start web @restController-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
         <!--eureka client依赖-->
         <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+            <groupId>com.ctrip.framework.apollo</groupId>
+            <artifactId>apollo-client</artifactId>
+            <version>1.7.0</version>
         </dependency>
         <!--lombok @Data自动生成get set , @Slf4j用于日志打印-->
         <dependency>
@@ -29,17 +35,5 @@
             <version>1.16.10</version>
             <scope>provided</scope>
         </dependency>
-        <!--gateway 的依赖-->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-gateway</artifactId>
-        </dependency>
-        <!--hystrix 依赖-->
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
-        </dependency>
-
     </dependencies>
-
 </project>

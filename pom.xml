@@ -33,6 +33,7 @@
         <module>nacos-ribbon-service</module>
         <module>nacos-config-client</module>
         <module>nacos-sentinel-service</module>
+        <module>cloud1-apollo-client</module>
     </modules>
 
     <properties>

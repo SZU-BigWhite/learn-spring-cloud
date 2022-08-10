@@ -7,12 +7,22 @@ spring:
     gateway:
       routes:
         - id: path_route
+          uri: lb://eureka-client-producter1
+          predicates:
+            - Path=/gateway/**,/test/**
+          filters:
+            - StripPrefix=1
+            - name: Hystrix
+              args:
+                name: fallback
+                fallbackUri: forward:/forward/hello
+        - id: hystrix_route
           uri: lb://eureka-client-producter
           predicates:
-            - Path=/gateway/**
+            - Path=/forward/**
           filters:
             - StripPrefix=1
 eureka:
   client:
     service-url:
-      defaultZone: http://root:123456@server1:2001/eureka/
+      defaultZone: http://root:123456@localhost:2001/eureka/

@@ -3,10 +3,7 @@ package org.example.openfeign.service;
 import org.example.openfeign.entities.User;
 import org.example.openfeign.web.vo.Result;
 import org.springframework.cloud.openfeign.FeignClient;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 @FeignClient(value = "eureka-client-producter")
 public interface UserService {
@@ -14,7 +11,9 @@ public interface UserService {
     Result insertUser(@RequestBody User user) ;
 
     /**
-     * 属性参数必须加@RequestParam
+     * param加@RequestParam
+     * post body 加 @RequestBody
+     * path value 加 @PathVariable
      * @param username
      * @return
      */
