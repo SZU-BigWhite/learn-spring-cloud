@@ -12,6 +12,7 @@
         <module name="oauth2-client" />
         <module name="cloud1-producter" />
         <module name="cloud1-gateway" />
+        <module name="cloud1-kafka-consumer" />
         <module name="cloud1-config-client" />
         <module name="cloud1-hystrix-service" />
         <module name="cloud1-config-server" />
@@ -20,6 +21,7 @@
         <module name="oauth2-jwt-server" />
         <module name="cloud1-ribbon-service" />
         <module name="nacos-user-service" />
+        <module name="cloud1-apollo-client" />
         <module name="nacos-sentinel-service" />
         <module name="oauth2-server" />
         <module name="nacos-ribbon-service" />
@@ -28,11 +30,13 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="cloud1-apollo-client" options="-parameters" />
       <module name="cloud1-config-client" options="-parameters" />
       <module name="cloud1-config-server" options="-parameters" />
       <module name="cloud1-eureka" options="-parameters" />
       <module name="cloud1-gateway" options="-parameters" />
       <module name="cloud1-hystrix-service" options="-parameters" />
+      <module name="cloud1-kafka-consumer" options="-parameters" />
       <module name="cloud1-openfeign-service" options="-parameters" />
       <module name="cloud1-producter" options="-parameters" />
       <module name="cloud1-ribbon-service" options="-parameters" />
